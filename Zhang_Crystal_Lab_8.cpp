@@ -17,11 +17,9 @@ int doubleMultiply (int a, int b) //This is a user defined function, it's name i
 
 
 //user defined function for part 3 
-double getSum (double a, double b, double c) //This is a user defined function, it's name is getSum and runs floats, doubles. it can run 3 doubles.
-{ 
-    double sum; //defines the variable that will be used in this function
-    sum = a + b + c; //defines what the final variable is equal to/what the function will do to the integers that will be inputted 
-    return sum; //returns the sum
+double getSum (double c, double d, double e) //This is a user defined function, it's name is getSum and runs floats, doubles. it can run 3 doubles.
+{
+    return c + d + e;
 }
 
 int main() 
@@ -60,7 +58,7 @@ int main()
 
   //Start of Part 3 
 
-  double numb1, numb2, numb3; //defines the three variables that will be used to obtain the sum 
+  double numb1, numb2, numb3; //defines the three variables that will be used to obtain the sum
 
     cout << "" << endl; //adds a space between this and the previous part
     cout << "Part Three" << endl; //defines which part this result pertains to
@@ -69,8 +67,11 @@ int main()
     cout << "Please input 3 numbers that will be used in this function." << endl;
     //allows user to input the three number
     cin >> numb1 >> numb2 >> numb3; 
+
+    double result = getSum (numb1, numb2, numb3); //defines the variable result as the sum of the three variables from the function getSum 
+    
     //calculates and prints he sum of those numbers with the user defined function: getSum
-    cout << "The sum of all three number inputted is: " << getSum (numb1, numb2, numb3) << endl;
+    cout << "The sum of all three number inputted is: " << result << endl;
 
     /* 
     Part One
